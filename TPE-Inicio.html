@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Transpeninne Express I Sua jornada começa aqui.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <div class="header-logo-container">
+            <img src="Assets/header-logo.png">
+        </div>
+
+        <div class="passagens-container">
+            <a href="#"><button type="button" class="passagem-btn">Comprar passagens</button></a>
+        </div>
+
+        <div class="hamb-menu-container" onclick="MenuAnimation(this)">
+            
+            <div class="hamb-bar1">
+
+            </div>
+
+
+            <div class="hamb-bar2">
+
+            </div>
+
+
+            <div class="hamb-bar3">
+
+            </div>
+        
+        </div>
+
+        
+
+    </header>
+
+    <div class="side-menu" id="menu">
+            
+    </div>
+
+    <div class="main-container">
+
+        <div class="main-image"></div>
+
+        <div class="gradient-solid"></div>
+
+        <div class="compra-rapida-container">
+
+            <div class="compra-rapida-top-text">
+                <p>Comprar passagem única <br><span style="font-family: Calibri; font-weight: lighter; font-size: 16px;">Selecione o seu destino, e compre sua passagem.</span></p>
+            </div>
+
+            <div class="destino-text">
+                <p>Selecione o seu destino:</p>
+            </div>
+
+            <div class="destino-box">
+                
+                <div class="partida-container">
+                    <select class="select-selected">
+                        <option class="select-item" value="0">Selecione seu local de partida:</option>
+                        <option class="select-item" value="1">Estação A (Terminal)</option>
+                        <option class="select-item" value="2">Estação B [Plataforma 2 I 3]</option>
+                        <option class="select-item" value="3">Estação C [Plataforma 1]</option>
+                        <option class="select-item" value="4">Estação D [Platafoma 5 I 7]</option>
+                        <option class="select-item" value="5">Estação E [Plataforma 2 I 6]</option>
+                        <option class="select-item" value="6">Estação F [Plataforma 4 I 5]</option>
+                        <option class="select-item" value="7">Estação G [Plataforma 4 I 5 I 6]</option>
+                    </select>
+                </div>
+
+                <div class="trocar-icon"></div>
+
+                <div class="final-container">
+                    <select class="final-select">
+                        <option class="select-item" value="0">Selecione sua estação terminal:</option>
+                        <option class="select-item" value="1">Estação H [Plataforma 2 I 3 I 4]</option>
+                        <option class="select-item" value="2">Estação I [Plataforma 2 I 3]</option>
+                        <option class="select-item" value="3">Estação J [Plataforma 1]</option>
+                        <option class="select-item" value="4">Estação K [Platafoma 5 I 7]</option>
+                        <option class="select-item" value="5">Estação L [Plataforma 2 I 6]</option>
+                        <option class="select-item" value="6">Estação M [Plataforma 4 I 5]</option>
+                        <option class="select-item" value="7">Estação N (Terminal)</option>
+                    </select>
+                </div>
+
+                
+            </div>
+
+            <div class="hora-text">
+                <p>Selecione o dia e hora da sua viagem:</p>
+            </div>
+
+            <div class="hora-box">
+
+                <div class="datatext-select-container">
+
+                    <div class="data-text">
+                        <p>Dia:</p>
+                    </div>
+
+                    <select class="dia-select">
+                        <option value="1">Dia:</option>
+                        <option value="2">Terça</option>
+                        <option value="3">Quarta</option>
+                        <option value="4">Quinta</option>
+                        <option value="5">Sexta</option>
+                        <option value="6">Sábado</option>
+                        <option value=7>Domingo</option>
+                    </select>
+
+                    <select class="mes-select">
+                        <option value="1">Mês:</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value=7>Julho</option>
+                    </select>
+                </div>
+
+                <div class="horatext-select-container">
+                    <div class="hora-text1">
+                        <p>Hora:</p>
+                    </div>
+
+                    <select class="hora-select">
+                        <option value="1">Hora:</option>
+                        <option value="2">12</option>
+                        <option value="3">13</option>
+                        <option value="4">14</option>
+                        <option value="5">15</option>
+                        <option value="6">16</option>
+                        <option value=7>17</option>
+                    </select>
+
+                    <select class="minuto-select">
+                        <option value="1">Minutos:</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                        <option value="4">20</option>
+                        <option value="5">25</option>
+                        <option value="6">30</option>
+                        <option value=7>35</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+            <div class="compra-btns-container">
+
+                <div class="left-btn">
+                    <p><a href="#">Comprar Passagem</a></p>
+                </div>
+
+                <div class="right-btn">
+                    <p><a href="#">Revisar sua rota</a></p>
+                </div>
+            </div>
+
+            <div class="compra-bottom-text">
+                <p>*A compra rápida é recomendada apenas para viagens de 1 passageiro. A Compra rápida não oferece disponibilidade a Primeira Classe.*</p>
+            </div>
+                
+        </div>
+
+        <div class="gradient-solid"></div>
+
+        <div class="center-container">
+
+            <div class="center-top-text">
+                <p>Últimas notícias e ofertas</p>
+            </div>
+
+            <div class="noticia-1">
+
+                <div class="noticia1-text1">
+                    <p>Protocolo de prevenção a COVID-19</p>
+                </div>
+
+                <div class="noticia1-text2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem libero aut aperiam provident similique illo nesciunt nostrum <br>ad porro eos, obcaecati vitae minus.</p>
+                </div>
+
+                <div class="noticia1-link">
+                    <p><a href="#">Saiba Mais</a></p>
+                </div>
+            </div>
+
+            <div class="noticia-2">
+
+                <div class="noticia2-text">
+                    <p>Cronograma Transpennine</p>
+                </div>
+
+                <div class="noticia2-text2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, animi adipisci.</p>
+                </div>
+
+                <div class="noticia2-link">
+                    <p><a href="#">Ler Mais</a></p>
+                </div>
+            </div>
+
+            <div class="noticia3">
+
+                <div class="noticia3-text">
+                    <p>Como viajar com a Transpennine</p>
+                </div>
+
+                <div class="noticia3-text2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, beatae dolore necessitatibus minus.</p>
+                </div>
+            </div>
+        
+        </div>
+            
+    </div>
+    
+</body>
+</html>
